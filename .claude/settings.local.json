@@ -17,7 +17,13 @@
       "Bash(curl -s -o /dev/null -w \"Home: %{http_code}\\\\n\" http://localhost:3000)",
       "Bash(curl -s -o /dev/null -w \"Contact: %{http_code}\\\\n\" http://localhost:3000/contact)",
       "Bash(python3 -c \"from PIL import Image; print\\('PIL available'\\)\")",
-      "Bash(python3)"
+      "Bash(python3)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git filter-branch *)",
+      "Bash(git stash *)",
+      "Bash(git push *)"
     ]
   }
 }
