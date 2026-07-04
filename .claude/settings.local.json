@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(which node *)",
+      "Read(//opt/**)",
+      "Read(//Users/hazelchitilian/Library/**)",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__navigate",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/contact)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/for-employers)",
+      "Bash(grep -v \"^\\\\$\")",
+      "Bash(python3 -c ' *)",
+      "Bash(pip3 install *)",
+      "Bash(ls ~/ | grep -i icloud; ls ~/Desktop ~/Documents ~/Downloads 2>/dev/null | head -40)",
+      "Bash(curl -s -o /dev/null -w \"Home: %{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"Contact: %{http_code}\\\\n\" http://localhost:3000/contact)",
+      "Bash(python3 -c \"from PIL import Image; print\\('PIL available'\\)\")",
+      "Bash(python3)"
+    ]
+  }
+}
