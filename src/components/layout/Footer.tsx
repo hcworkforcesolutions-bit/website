@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="relative w-16 h-16 mb-4">
               <Image
-                src="/images/logo-transparent.png"
+                src="/images/logo-dark-bg.png"
                 alt="HC Workforce Solutions LLC"
                 fill
                 className="object-contain"
