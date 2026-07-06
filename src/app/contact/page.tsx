@@ -1,8 +1,28 @@
 "use client";
 
-import { Phone, Mail, MapPin, Clock, MessageCircle, Facebook, Instagram, Linkedin, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Facebook, Instagram, Linkedin, ArrowRight, CheckCircle } from "lucide-react";
 
 export default function ContactPage() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSubmitting(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const response = await fetch("https://formspree.io/f/xpwrgnkj", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+    setSubmitting(false);
+    if (response.ok) {
+      setSubmitted(true);
+      form.reset();
+    }
+  }
   return (
     <>
       {/* Hero */}
@@ -73,9 +93,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-brand-navy font-bold text-sm mb-1">Email</p>
-                    {/* UPDATE: hcworkforcesolutions@gmail.com email address */}
-                    <a href="mailto:hcworkforcesolutions@gmail.com" className="text-brand-gold font-semibold hover:underline text-sm">
-                      hcworkforcesolutions@gmail.com
+                    {/* UPDATE: info@hcworkforcesolutions.com email address */}
+                    <a href="mailto:info@hcworkforcesolutions.com" className="text-brand-gold font-semibold hover:underline text-sm">
+                      info@hcworkforcesolutions.com
                     </a>
                   </div>
                 </div>
@@ -164,19 +184,26 @@ export default function ContactPage() {
                   Whether you&apos;re an employer looking for staff, a job seeker, or a potential
                   partner — fill in the form and we&apos;ll get back to you promptly.
                 </p>
-                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                {submitted ? (
+                  <div className="flex flex-col items-center justify-center py-16 text-center">
+                    <CheckCircle size={56} className="text-green-500 mb-4" />
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">Message Sent!</h3>
+                    <p className="text-brand-slate">Thank you for contacting us. We will get back to you within 24 business hours.</p>
+                  </div>
+                ) : (
+                <form className="space-y-5" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-brand-navy text-xs font-semibold uppercase tracking-wide mb-2">
                         Your Name *
                       </label>
-                      <input type="text" placeholder="Full Name" className="input-field" required />
+                      <input name="name" type="text" placeholder="Full Name" className="input-field" required />
                     </div>
                     <div>
                       <label className="block text-brand-navy text-xs font-semibold uppercase tracking-wide mb-2">
                         Company / Organization
                       </label>
-                      <input type="text" placeholder="Company Name (if applicable)" className="input-field" />
+                      <input name="company" type="text" placeholder="Company Name (if applicable)" className="input-field" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -184,20 +211,20 @@ export default function ContactPage() {
                       <label className="block text-brand-navy text-xs font-semibold uppercase tracking-wide mb-2">
                         Email Address *
                       </label>
-                      <input type="email" placeholder="your@email.com" className="input-field" required />
+                      <input name="email" type="email" placeholder="your@email.com" className="input-field" required />
                     </div>
                     <div>
                       <label className="block text-brand-navy text-xs font-semibold uppercase tracking-wide mb-2">
                         Phone Number
                       </label>
-                      <input type="tel" placeholder="+374 __ ______" className="input-field" />
+                      <input name="phone" type="tel" placeholder="+374 __ ______" className="input-field" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-brand-navy text-xs font-semibold uppercase tracking-wide mb-2">
                       Inquiry Type *
                     </label>
-                    <select className="select-field" required>
+                    <select name="inquiry_type" className="select-field" required>
                       <option value="">Select Inquiry Type</option>
                       <option>Request Staff (Employer)</option>
                       <option>Job Application (Candidate)</option>
@@ -211,19 +238,21 @@ export default function ContactPage() {
                       Message *
                     </label>
                     <textarea
+                      name="message"
                       rows={6}
                       placeholder="Please describe your inquiry in detail — the more information you provide, the better we can assist you."
                       className="input-field resize-none"
                       required
                     />
                   </div>
-                  <button type="submit" className="btn-primary w-full justify-center text-base py-4">
-                    Send Message <ArrowRight size={18} />
+                  <button type="submit" disabled={submitting} className="btn-primary w-full justify-center text-base py-4">
+                    {submitting ? "Sending..." : <>"Send Message" <ArrowRight size={18} /></>}
                   </button>
                   <p className="text-brand-slate text-xs text-center">
                     We typically respond within 24 business hours.
                   </p>
                 </form>
+                )}
               </div>
 
               {/* Map Placeholder */}
@@ -275,12 +304,12 @@ export default function ContactPage() {
               <p className="text-white/60 text-xs mt-1">+374 91 151795</p>
             </a>
             <a
-              href="mailto:hcworkforcesolutions@gmail.com"
+              href="mailto:info@hcworkforcesolutions.com"
               className="flex flex-col items-center p-6 bg-white/10 rounded-2xl hover:bg-white/15 transition-colors text-center"
             >
               <Mail size={24} className="text-brand-gold mb-3" />
               <p className="text-white font-semibold text-sm">Email Us</p>
-              <p className="text-white/60 text-xs mt-1">hcworkforcesolutions@gmail.com</p>
+              <p className="text-white/60 text-xs mt-1">info@hcworkforcesolutions.com</p>
             </a>
           </div>
         </div>

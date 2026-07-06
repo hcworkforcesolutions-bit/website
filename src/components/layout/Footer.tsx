@@ -167,10 +167,10 @@ export default function Footer() {
                 <Mail size={16} className="text-brand-gold flex-shrink-0" />
                 {/* UPDATE: Replace with your actual email address */}
                 <a
-                  href="mailto:hcworkforcesolutions@gmail.com"
+                  href="mailto:info@hcworkforcesolutions.com"
                   className="text-white/70 text-sm hover:text-brand-gold transition-colors"
                 >
-                  hcworkforcesolutions@gmail.com
+                  info@hcworkforcesolutions.com
                 </a>
               </li>
             </ul>
