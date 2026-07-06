@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mt-6">
               {/* UPDATE: Replace # with your actual social media URLs */}
               <a
-                href="https://facebook.com/hcworkforcesolutions"
+                href="https://www.facebook.com/HCWorkforceSolutionsLLC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy transition-all duration-200"
@@ -61,7 +61,7 @@ export default function Footer() {
                 <Facebook size={16} />
               </a>
               <a
-                href="https://instagram.com/hcworkforcesolutions"
+                href="https://www.instagram.com/hcworkforcesolutions.am/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy transition-all duration-200"

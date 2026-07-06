@@ -146,7 +146,7 @@ export default function ContactPage() {
                 <div className="flex gap-3">
                   {/* UPDATE: Replace href with your actual social media URLs */}
                   <a
-                    href="https://facebook.com/hcworkforcesolutions"
+                    href="https://www.facebook.com/HCWorkforceSolutionsLLC"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-brand-light-gray rounded-lg flex items-center justify-center hover:bg-brand-gold/20 transition-colors"
@@ -155,7 +155,7 @@ export default function ContactPage() {
                     <Facebook size={18} className="text-brand-navy" />
                   </a>
                   <a
-                    href="https://instagram.com/hcworkforcesolutions"
+                    href="https://www.instagram.com/hcworkforcesolutions.am/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-brand-light-gray rounded-lg flex items-center justify-center hover:bg-brand-gold/20 transition-colors"
