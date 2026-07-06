@@ -246,7 +246,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <button type="submit" disabled={submitting} className="btn-primary w-full justify-center text-base py-4">
-                    {submitting ? "Sending..." : <>"Send Message" <ArrowRight size={18} /></>}
+                    {submitting ? "Sending..." : (<span className="flex items-center gap-2">Send Message <ArrowRight size={18} /></span>)}
                   </button>
                   <p className="text-brand-slate text-xs text-center">
                     We typically respond within 24 business hours.
