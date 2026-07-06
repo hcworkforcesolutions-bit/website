@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Building2, CheckCircle2 } from "lucide-react";
 
@@ -11,6 +12,22 @@ const benefits = [
 ];
 
 export default function EmployerCTA() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSubmitting(true);
+    const data = new FormData(e.currentTarget);
+    const response = await fetch("https://formspree.io/f/maqgvzaw", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+    setSubmitting(false);
+    if (response.ok) setSubmitted(true);
+  }
+
   return (
     <section className="section-padding bg-brand-light-gray">
       <div className="container-max">
@@ -57,23 +74,34 @@ export default function EmployerCTA() {
               <p className="text-white/60 text-sm mb-8">
                 Tell us your need and we&apos;ll get back to you within 24 hours.
               </p>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              {submitted ? (
+                <div className="flex flex-col items-center justify-center py-10 text-center">
+                  <CheckCircle2 size={48} className="text-green-400 mb-4" />
+                  <h3 className="text-white font-bold text-lg mb-2">Inquiry Submitted!</h3>
+                  <p className="text-white/60 text-sm">We will contact you within 24 hours.</p>
+                </div>
+              ) : (
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
+                  name="company"
                   type="text"
                   placeholder="Company Name"
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-brand-gold"
                 />
                 <input
+                  name="name"
                   type="text"
                   placeholder="Your Name"
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-brand-gold"
+                  required
                 />
                 <input
+                  name="phone"
                   type="tel"
                   placeholder="Phone Number"
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-brand-gold"
                 />
-                <select className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold appearance-none">
+                <select name="staff_type" className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold appearance-none">
                   <option value="" className="bg-brand-navy">Type of Staff Needed</option>
                   <option value="corporate" className="bg-brand-navy">Corporate & Administrative</option>
                   <option value="hospitality" className="bg-brand-navy">Hospitality</option>
@@ -85,14 +113,16 @@ export default function EmployerCTA() {
                   <option value="other" className="bg-brand-navy">Other</option>
                 </select>
                 <textarea
+                  name="description"
                   rows={3}
                   placeholder="Brief description of your staffing need..."
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-brand-gold resize-none"
                 />
-                <button type="submit" className="btn-primary w-full justify-center">
-                  Submit Inquiry <ArrowRight size={16} />
+                <button type="submit" disabled={submitting} className="btn-primary w-full justify-center">
+                  {submitting ? "Submitting..." : <span className="flex items-center gap-2">Submit Inquiry <ArrowRight size={16} /></span>}
                 </button>
               </form>
+              )}
             </div>
           </div>
         </div>
