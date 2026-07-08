@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hcworkforcesolutions.am"),
+  metadataBase: new URL("https://hcworkforcesolutions.com"),
   title: {
     default: "HC Workforce Solutions LLC | Staffing & Recruitment Agency Armenia",
     template: "%s | HC Workforce Solutions LLC",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hcworkforcesolutions.am",
+    url: "https://hcworkforcesolutions.com",
     siteName: "HC Workforce Solutions LLC",
     title: "HC Workforce Solutions LLC | Staffing & Recruitment Agency Armenia",
     description:
@@ -59,6 +59,40 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "HC Workforce Solutions LLC",
+  description:
+    "Armenia's trusted staffing and workforce solutions partner. Connecting qualified talent with businesses across every sector.",
+  url: "https://hcworkforcesolutions.com",
+  telephone: "+37491151795",
+  email: "info@hcworkforcesolutions.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Yerevan",
+    addressCountry: "AM",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "10:00",
+      closes: "14:00",
+    },
+  ],
+  sameAs: [
+    "https://www.facebook.com/HCWorkforceSolutionsLLC",
+    "https://www.instagram.com/hcworkforcesolutions.am/",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -74,6 +108,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="bg-white">
         <Header />
