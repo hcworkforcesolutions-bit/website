@@ -115,7 +115,7 @@ export default function ContactPage() {
                   <a href="https://www.instagram.com/hcworkforcesolutions.am/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-brand-light-gray rounded-lg flex items-center justify-center hover:bg-brand-gold/20 transition-colors" aria-label="Instagram">
                     <Instagram size={18} className="text-brand-navy" />
                   </a>
-                  <a href="https://www.linkedin.com/company/linkedin.com-company-hcworkforcesolutionsllc" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-brand-light-gray rounded-lg flex items-center justify-center hover:bg-brand-gold/20 transition-colors" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/company/hcworkforcesolutionsllc" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-brand-light-gray rounded-lg flex items-center justify-center hover:bg-brand-gold/20 transition-colors" aria-label="LinkedIn">
                     <Linkedin size={18} className="text-brand-navy" />
                   </a>
                 </div>
