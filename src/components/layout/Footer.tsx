@@ -70,7 +70,7 @@ export default function Footer() {
                 <Instagram size={16} />
               </a>
               <a
-                href="https://linkedin.com/company/hcworkforcesolutions"
+                href="https://www.linkedin.com/company/hcworkforcesolutionsllc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy transition-all duration-200"
