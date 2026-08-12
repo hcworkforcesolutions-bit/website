@@ -127,12 +127,13 @@ export default function AboutPage() {
               </div>
               <p className="section-label mb-3">Our Mission</p>
               <h3 className="text-xl font-bold text-brand-navy mb-4">
-                Delivering Workforce Solutions That Drive Business Success
+                Connecting People. Supporting Families. Empowering Businesses.
               </h3>
               <p className="text-brand-slate leading-relaxed">
-                To provide businesses, organizations, and households across Armenia with qualified,
-                reliable, and professionally screened personnel — while creating meaningful
-                employment opportunities for workers across every sector.
+                To deliver ethical, reliable, and tailored workforce solutions by connecting
+                qualified talent with businesses, organizations, and households across Armenia —
+                creating meaningful opportunities for people and lasting value for every client
+                we serve.
               </p>
             </div>
             <div className="card border border-gray-100">
@@ -141,12 +142,12 @@ export default function AboutPage() {
               </div>
               <p className="section-label mb-3">Our Vision</p>
               <h3 className="text-xl font-bold text-brand-navy mb-4">
-                Armenia&apos;s Premier Workforce Solutions Partner
+                A Trusted Workforce Solutions Partner
               </h3>
               <p className="text-brand-slate leading-relaxed">
-                To be recognized as the most trusted, professional, and effective staffing and
-                workforce solutions company in Armenia — where every employer finds the right
-                people, and every worker finds the right opportunity.
+                To be recognized as a trusted workforce solutions company — empowering businesses
+                with exceptional talent and connecting people with meaningful opportunities through
+                professionalism, integrity, innovation, and long-term partnerships.
               </p>
             </div>
           </div>
