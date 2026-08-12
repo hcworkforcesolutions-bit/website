@@ -10,6 +10,7 @@ import {
   Factory,
   Home,
   Clock,
+  Crown,
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
@@ -18,7 +19,7 @@ import ServicesQuickNav from "@/components/services/ServicesQuickNav";
 export const metadata: Metadata = {
   title: "Staffing Services | HC Workforce Solutions LLC",
   description:
-    "Comprehensive staffing services in Armenia: corporate, hospitality, housekeeping, healthcare, retail, industrial, household, and flexible staffing. HC Workforce Solutions LLC.",
+    "Comprehensive staffing services in Armenia and Europe: corporate, hospitality, housekeeping, healthcare, retail, industrial, VIP household, and flexible staffing. HC Workforce Solutions LLC.",
 };
 
 const services = [
@@ -36,7 +37,7 @@ const services = [
       "Data Entry Staff",
     ],
     forWho: "Offices, SMEs, corporations, startups, commercial buildings",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80",
     imageAlt: "Modern corporate office environment",
   },
   {
@@ -157,6 +158,25 @@ const services = [
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
     imageAlt: "Business planning and contract staffing",
   },
+  {
+    id: "vip",
+    icon: Crown,
+    title: "VIP & Premium Household Services",
+    desc: "Exclusive, bespoke staffing for high-profile clients and luxury households requiring the highest standards of skill, professionalism, and discretion.",
+    roles: [
+      "Private Chef",
+      "Personal Chef for VIP",
+      "Housekeeper for VIP",
+      "Personal Assistant",
+      "Butler",
+      "Estate Manager",
+      "Private Driver",
+      "Nanny for VIP Household",
+    ],
+    forWho: "VIP clients, luxury residences, high-profile families, executive households, diplomatic residences, international clients",
+    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+    imageAlt: "Private chef preparing a gourmet meal for VIP client",
+  },
 ];
 
 export default function ServicesPage() {
@@ -172,8 +192,9 @@ export default function ServicesPage() {
             Staffing Solutions for Every Need
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Eight comprehensive staffing categories designed to meet the workforce needs of every
-            business, organization, and household across Armenia.
+            Nine comprehensive staffing categories — including exclusive VIP & Premium services —
+            designed to meet the workforce needs of every business, organization, and household
+            across Armenia and international markets.
           </p>
         </div>
       </section>

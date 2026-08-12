@@ -5,14 +5,15 @@ import ServiceCategories from "@/components/home/ServiceCategories";
 import IndustryHighlights from "@/components/home/IndustryHighlights";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import HowItWorksPreview from "@/components/home/HowItWorksPreview";
+import Testimonials from "@/components/home/Testimonials";
 import EmployerCTA from "@/components/home/EmployerCTA";
 import WorkerCTA from "@/components/home/WorkerCTA";
 import StatsSection from "@/components/home/StatsSection";
 
 export const metadata: Metadata = {
-  title: "HC Workforce Solutions LLC | Staffing & Recruitment Agency Armenia",
+  title: "HC Workforce Solutions LLC | Staffing Agency Armenia & Europe",
   description:
-    "Armenia's trusted workforce solutions partner. We provide qualified staffing for hospitality, healthcare, retail, corporate, and industrial sectors. Request staff or apply today.",
+    "Armenia-based staffing and workforce solutions partner now serving European markets. Qualified staffing for hospitality, healthcare, retail, corporate, VIP household, and more. Request staff or apply today.",
 };
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
       <IndustryHighlights />
       <WhyChooseUs />
       <HowItWorksPreview />
+      <Testimonials />
       <EmployerCTA />
       <WorkerCTA />
     </>

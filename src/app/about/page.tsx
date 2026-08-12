@@ -101,8 +101,8 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { num: "8+", label: "Staffing Categories", sub: "From corporate to household" },
-                { num: "9+", label: "Industries Served", sub: "Across Armenia's economy" },
+                { num: "9+", label: "Staffing Categories", sub: "Including VIP & Premium" },
+                { num: "10+", label: "Industries Served", sub: "Armenia & European markets" },
                 { num: "100%", label: "Candidate Vetting", sub: "Every placement screened" },
                 { num: "24h", label: "Response Time", sub: "For employer inquiries" },
               ].map(({ num, label, sub }) => (

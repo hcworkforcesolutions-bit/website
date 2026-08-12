@@ -11,6 +11,7 @@ const serviceItems = [
   { id: "industrial", label: "Industrial" },
   { id: "household", label: "Household" },
   { id: "temporary", label: "Temporary" },
+  { id: "vip", label: "⭐ VIP & Premium" },
 ];
 
 export default function ServicesQuickNav() {

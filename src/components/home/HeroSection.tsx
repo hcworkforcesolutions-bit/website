@@ -28,7 +28,7 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 bg-brand-gold/15 border border-brand-gold/30 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-brand-gold rounded-full" />
               <span className="text-brand-gold text-xs font-semibold uppercase tracking-widest">
-                Workforce Solutions · Yerevan, Armenia
+                Armenia · Now Serving European Markets
               </span>
             </div>
 
@@ -41,8 +41,9 @@ export default function HeroSection() {
 
             {/* Subheadline */}
             <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
-              Providing qualified staffing support for hospitality, healthcare, retail, facilities
-              management, administration, operations, and household services across Armenia.
+              Providing qualified staffing support across hospitality, healthcare, retail, corporate,
+              operations, and premium VIP household services — serving clients in Armenia and
+              across the European market.
             </p>
 
             {/* Trust indicators */}

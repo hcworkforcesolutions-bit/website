@@ -3,8 +3,8 @@ import { CheckCircle2 } from "lucide-react";
 
 const strengths = [
   "Thorough candidate screening and vetting process",
-  "Specialists across 8 staffing categories",
-  "Serving all major industries in Armenia",
+  "9 staffing categories including VIP & Premium services",
+  "Serving Armenia and European markets",
   "Flexible staffing: temporary, contract, and permanent",
   "Dedicated employer and worker support teams",
   "Fast turnaround on staffing requests",
@@ -22,11 +22,11 @@ export default function CompanyOverview() {
               <div className="relative z-10">
                 <p className="section-label mb-3">Who We Are</p>
                 <h3 className="text-2xl font-bold text-brand-navy mb-4 font-heading">
-                  Armenia&apos;s Workforce Partner for Every Sector
+                  Armenia-Based. Now Serving European Markets.
                 </h3>
                 <p className="text-brand-slate text-sm leading-relaxed mb-6">
                   HC Workforce Solutions LLC was founded on a simple belief: the right people, in
-                  the right role, change everything for a business.
+                  the right role, change everything for a business — locally and internationally.
                 </p>
                 <div className="space-y-3">
                   {strengths.map((s) => (
@@ -40,7 +40,7 @@ export default function CompanyOverview() {
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 bg-brand-navy rounded-2xl p-5 shadow-card-hover">
-              <p className="text-brand-gold text-3xl font-bold">8+</p>
+              <p className="text-brand-gold text-3xl font-bold">9+</p>
               <p className="text-white/80 text-xs mt-1">Service Categories</p>
             </div>
           </div>
@@ -54,13 +54,14 @@ export default function CompanyOverview() {
             </h2>
             <p className="section-subtitle mb-6">
               We are a workforce and staffing solutions company providing qualified personnel to
-              businesses, organizations, institutions, and households across Armenia.
+              businesses, organizations, institutions, and households in Armenia — and now extending
+              our reach to serve clients across the European market.
             </p>
             <p className="text-brand-slate leading-relaxed mb-8">
-              From hotels and hospitals to factories, retail stores, and family homes — we source,
-              screen, and place reliable workers so your operations never skip a beat. Our approach
-              combines professional rigor with a human touch, ensuring every placement is the right
-              fit for both employer and employee.
+              From hotels and hospitals to factories, retail stores, VIP households, and European
+              employers — we source, screen, and place reliable workers so your operations never
+              skip a beat. Our approach combines professional rigor with a human touch, ensuring
+              every placement is the right fit for both employer and candidate.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/about" className="btn-primary">
