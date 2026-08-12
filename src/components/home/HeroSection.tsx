@@ -28,7 +28,7 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 bg-brand-gold/15 border border-brand-gold/30 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-brand-gold rounded-full" />
               <span className="text-brand-gold text-xs font-semibold uppercase tracking-widest">
-                Armenia · Now Serving European Markets
+                International Workforce Solutions · Yerevan, Armenia
               </span>
             </div>
 

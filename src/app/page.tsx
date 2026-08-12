@@ -25,8 +25,8 @@ export default function HomePage() {
       <ServiceCategories />
       <IndustryHighlights />
       <WhyChooseUs />
-      <HowItWorksPreview />
       <Testimonials />
+      <HowItWorksPreview />
       <EmployerCTA />
       <WorkerCTA />
     </>

@@ -37,7 +37,7 @@ const services = [
       "Data Entry Staff",
     ],
     forWho: "Offices, SMEs, corporations, startups, commercial buildings",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
     imageAlt: "Modern corporate office environment",
   },
   {
