@@ -41,9 +41,9 @@ export default function HeroSection() {
 
             {/* Subheadline */}
             <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
-              Providing qualified staffing support across hospitality, healthcare, retail, corporate,
-              operations, and premium VIP household services — serving clients in Armenia and
-              across the European market.
+              We connect businesses with exceptional talent — placing the right people in the right
+              roles across every industry, from corporate offices and luxury hospitality to
+              healthcare facilities, retail operations, and VIP household services.
             </p>
 
             {/* Trust indicators */}
@@ -109,8 +109,8 @@ export default function HeroSection() {
           <div className="hidden lg:block relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[580px]">
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85"
-                alt="Professional workforce team meeting in Armenia"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&q=85"
+                alt="Professional executive team — HC Workforce Solutions"
                 fill
                 className="object-cover"
                 priority
@@ -123,7 +123,7 @@ export default function HeroSection() {
                 <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-lg">
                   <div className="grid grid-cols-3 gap-4 text-center">
                     {[
-                      { num: "8+", label: "Staffing Categories" },
+                      { num: "9+", label: "Staffing Categories" },
                       { num: "24h", label: "Response Time" },
                       { num: "100%", label: "Candidate Vetting" },
                     ].map(({ num, label }) => (

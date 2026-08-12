@@ -22,11 +22,12 @@ export default function CompanyOverview() {
               <div className="relative z-10">
                 <p className="section-label mb-3">Who We Are</p>
                 <h3 className="text-2xl font-bold text-brand-navy mb-4 font-heading">
-                  Armenia-Based. Now Serving European Markets.
+                  Your International Staffing Partner
                 </h3>
                 <p className="text-brand-slate text-sm leading-relaxed mb-6">
-                  HC Workforce Solutions LLC was founded on a simple belief: the right people, in
-                  the right role, change everything for a business — locally and internationally.
+                  HC Workforce Solutions LLC was founded on a clear belief: the right people,
+                  in the right role, change everything for a business — and that standard applies
+                  everywhere we operate.
                 </p>
                 <div className="space-y-3">
                   {strengths.map((s) => (
@@ -50,18 +51,19 @@ export default function CompanyOverview() {
             <p className="section-label mb-3">HC Workforce Solutions LLC</p>
             <div className="gold-divider mb-6" />
             <h2 className="section-title mb-6">
-              Helping Businesses Find the Right People
+              The Right People. Every Role. Every Time.
             </h2>
             <p className="section-subtitle mb-6">
-              We are a workforce and staffing solutions company providing qualified personnel to
-              businesses, organizations, institutions, and households in Armenia — and now extending
-              our reach to serve clients across the European market.
+              We are an international workforce and staffing solutions company — sourcing,
+              screening, and placing exceptional talent for businesses, organizations, institutions,
+              and households across all industries and markets.
             </p>
             <p className="text-brand-slate leading-relaxed mb-8">
-              From hotels and hospitals to factories, retail stores, VIP households, and European
-              employers — we source, screen, and place reliable workers so your operations never
-              skip a beat. Our approach combines professional rigor with a human touch, ensuring
-              every placement is the right fit for both employer and candidate.
+              From luxury hotels and corporate offices to healthcare facilities, industrial
+              operations, and VIP private residences — we deliver professionals who are the right
+              fit from day one. Our approach combines rigorous vetting with a genuinely human
+              touch, because great placements are about more than matching skills to a job
+              description.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/about" className="btn-primary">
