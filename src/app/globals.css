@@ -16,6 +16,10 @@
     scroll-behavior: smooth;
   }
 
+  .scroll-section {
+    scroll-margin-top: 100px;
+  }
+
   body {
     @apply font-sans text-brand-navy antialiased;
   }
