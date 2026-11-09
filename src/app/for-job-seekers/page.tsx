@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Users, FileText, UserCheck, Briefcase, Heart, Star, CheckCircle2, ArrowRight } from "lucide-react";
+import { Users, FileText, UserCheck, Briefcase, Heart, Star, CheckCircle2, ArrowRight, Mail, MessageCircle } from "lucide-react";
 import JobSeekerForm from "@/components/forms/JobSeekerForm";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ const whyApply = [
 
 const applicationSteps = [
   { num: "01", title: "Submit Your Application", desc: "Complete our candidate registration form with your personal details, work history, and preferred job category." },
-  { num: "02", title: "Initial Review", desc: "Our team reviews your application and contacts you within 48 hours to discuss your profile and goals." },
+  { num: "02", title: "Initial Review", desc: "Our team reviews your application and reaches out within 48 hours via email or WhatsApp to discuss your profile and goals." },
   { num: "03", title: "Candidate Interview", desc: "We conduct a brief interview to understand your experience, skills, availability, and employment preferences." },
   { num: "04", title: "Registration & Screening", desc: "We complete your candidate profile including references, documentation, and skills assessment." },
   { num: "05", title: "Job Matching", desc: "We match you to suitable opportunities with employers looking for candidates with your profile." },
@@ -152,11 +152,34 @@ export default function ForJobSeekersPage() {
                 ))}
               </ul>
               <div className="bg-brand-gold/15 border border-brand-gold/30 rounded-2xl p-6">
-                <p className="text-brand-gold font-semibold text-sm mb-1">Contact Us Directly</p>
-                <p className="text-white/70 text-sm">
-                  Prefer to contact us directly? Call or WhatsApp us at{" "}
-                  <a href="tel:+37491151795" className="text-brand-gold hover:underline font-semibold">+374 91 151795</a>
+                <p className="text-brand-gold font-semibold text-sm mb-3">Prefer to Reach Us Directly?</p>
+                <p className="text-white/70 text-xs mb-4">
+                  Please do not call — our team handles all candidate inquiries through the channels below to ensure your application is properly tracked and responded to.
                 </p>
+                <div className="space-y-3">
+                  <a
+                    href="mailto:info@hcworkforcesolutions.com"
+                    className="flex items-center gap-3 bg-white/10 hover:bg-white/15 rounded-xl px-4 py-3 transition-colors"
+                  >
+                    <Mail size={16} className="text-brand-gold flex-shrink-0" />
+                    <div>
+                      <p className="text-white text-xs font-semibold">Email Us</p>
+                      <p className="text-white/60 text-xs">info@hcworkforcesolutions.com</p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://wa.me/37491151795"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-white/10 hover:bg-white/15 rounded-xl px-4 py-3 transition-colors"
+                  >
+                    <MessageCircle size={16} className="text-brand-gold flex-shrink-0" />
+                    <div>
+                      <p className="text-white text-xs font-semibold">WhatsApp</p>
+                      <p className="text-white/60 text-xs">+374 91 151795</p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8">
