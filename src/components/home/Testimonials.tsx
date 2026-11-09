@@ -29,30 +29,30 @@ const testimonials = [
     rating: 5,
   },
   {
-    initial: "A.V.",
-    role: "Private Estate Manager",
+    initial: "K.A.",
+    role: "Private Residence Owner",
     sector: "VIP Household",
     location: "Confidential",
     quote:
-      "Finding a private chef who meets the exacting standards of a high-profile household is not easy. HC Workforce Solutions understood our requirements completely — the placement was seamless and the discretion was absolute.",
+      "I needed a housekeeper who could maintain the highest standards in my home without supervision. HC Workforce Solutions sent me exactly that — professional, discreet, and reliable from day one.",
     rating: 5,
   },
   {
-    initial: "C.M.",
-    role: "Personal Representative",
-    sector: "Executive Household",
+    initial: "F.L.",
+    role: "Homeowner",
+    sector: "Luxury Residential",
     location: "Confidential",
     quote:
-      "We engaged HC Workforce Solutions to staff a VIP residence with a housekeeper and a personal assistant. Both placements exceeded expectations. Their vetting process gave us full confidence before anyone set foot on the property.",
+      "My maintenance requirements are specific and my expectations are high. HC Workforce Solutions took the time to understand what I needed and placed someone who has been outstanding. I wouldn't go elsewhere.",
     rating: 5,
   },
   {
-    initial: "R.D.",
-    role: "Chief of Staff",
-    sector: "High-Profile Family Office",
+    initial: "T.B.",
+    role: "Property Owner",
+    sector: "High-End Residential",
     location: "International Client",
     quote:
-      "Discretion is non-negotiable when staffing for a prominent family. HC Workforce Solutions handled every detail with professionalism and confidentiality. We continue to rely on them exclusively for all household staffing needs.",
+      "I contacted HC Workforce Solutions directly and was impressed by how seriously they took confidentiality. The housekeeper placed at my property is exceptional — thorough, trustworthy, and exactly what I asked for.",
     rating: 5,
   },
 ];
