@@ -1,35 +1,35 @@
-import { Shield, Search, UserCheck, Headphones, Zap, Award } from "lucide-react";
+import { Shield, Search, UserCheck, Headphones, Zap, Lock } from "lucide-react";
 
 const reasons = [
-  {
-    icon: Search,
-    title: "Thorough Candidate Sourcing",
-    desc: "We tap into a wide network of qualified candidates and proactively source talent matched to your specific needs.",
-  },
   {
     icon: Shield,
     title: "Rigorous Screening Standards",
     desc: "Every candidate is background-checked, reference-verified, and skill-assessed before being presented to you.",
   },
   {
-    icon: UserCheck,
-    title: "Right-Fit Matching",
-    desc: "We take time to understand your business culture, requirements, and team dynamics to find the perfect match.",
+    icon: Search,
+    title: "Precision Talent Matching",
+    desc: "We go beyond CVs — understanding your environment, culture, and expectations to find candidates who truly fit.",
+  },
+  {
+    icon: Lock,
+    title: "Absolute Discretion",
+    desc: "For sensitive and VIP placements, we operate under strict confidentiality. Your privacy and security are paramount.",
   },
   {
     icon: Zap,
-    title: "Fast Turnaround",
-    desc: "Urgent staffing need? We respond quickly and efficiently without compromising on quality or due diligence.",
+    title: "Fast, Reliable Turnaround",
+    desc: "Urgent staffing need? We respond within 24 hours and move efficiently without compromising on quality.",
   },
   {
     icon: Headphones,
     title: "Ongoing Placement Support",
-    desc: "Our support doesn't end at placement. We stay engaged to ensure both employer and employee satisfaction.",
+    desc: "Our support doesn't end at placement. We stay engaged to ensure lasting satisfaction on both sides.",
   },
   {
-    icon: Award,
-    title: "Industry Expertise",
-    desc: "With experience across 9+ sectors, we understand the unique workforce challenges each industry faces.",
+    icon: UserCheck,
+    title: "Premium & Standard Placements",
+    desc: "From everyday business staffing to elite VIP household roles — we deliver excellence at every level.",
   },
 ];
 
@@ -43,20 +43,22 @@ export default function WhyChooseUs() {
             <p className="section-label mb-3">Why HC Workforce Solutions</p>
             <div className="gold-divider mb-6" />
             <h2 className="section-title mb-6">
-              What Sets Us Apart as Your Staffing Partner
+              What Sets Us Apart
             </h2>
             <p className="section-subtitle mb-8">
-              We don&apos;t just fill vacancies. We build workforce partnerships that help
-              businesses operate consistently, confidently, and professionally.
+              We don&apos;t just fill vacancies. We build relationships — placing the right
+              person in the right role with the precision, care, and discretion that every
+              client deserves.
             </p>
             <div className="bg-brand-navy rounded-2xl p-8 text-white">
               <p className="text-brand-gold text-xs font-semibold uppercase tracking-widest mb-4">
-                Our Promise to You
+                Our Promise to Every Client
               </p>
               <p className="text-white/80 leading-relaxed text-sm">
-                Every candidate we present has been personally reviewed by our team. We do not
-                forward unvetted applications. Our commitment is to save you time, reduce hiring
-                risk, and deliver staff you can rely on from day one.
+                Every candidate we present has been personally reviewed by our team. We never
+                forward unvetted applications. Whether you need a corporate receptionist or a
+                private chef for a VIP residence — our standard is the same: excellence,
+                reliability, and complete professionalism from day one.
               </p>
             </div>
           </div>

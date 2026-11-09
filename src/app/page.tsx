@@ -6,6 +6,7 @@ import IndustryHighlights from "@/components/home/IndustryHighlights";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import HowItWorksPreview from "@/components/home/HowItWorksPreview";
 import Testimonials from "@/components/home/Testimonials";
+import EliteClients from "@/components/home/EliteClients";
 import EmployerCTA from "@/components/home/EmployerCTA";
 import WorkerCTA from "@/components/home/WorkerCTA";
 import StatsSection from "@/components/home/StatsSection";
@@ -25,6 +26,7 @@ export default function HomePage() {
       <ServiceCategories />
       <IndustryHighlights />
       <WhyChooseUs />
+      <EliteClients />
       <Testimonials />
       <HowItWorksPreview />
       <EmployerCTA />

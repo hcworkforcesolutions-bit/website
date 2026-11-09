@@ -1,8 +1,8 @@
 const stats = [
-  { value: "8+", label: "Staffing Categories" },
-  { value: "9+", label: "Industries Served" },
-  { value: "100%", label: "Screened Candidates" },
-  { value: "24h", label: "Avg. Response Time" },
+  { value: "9+", label: "Staffing Categories" },
+  { value: "100%", label: "Candidates Pre-Screened" },
+  { value: "24h", label: "Response Guarantee" },
+  { value: "VIP", label: "Elite Placements Available" },
 ];
 
 export default function StatsSection() {

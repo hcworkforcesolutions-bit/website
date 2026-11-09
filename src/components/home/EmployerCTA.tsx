@@ -110,6 +110,7 @@ export default function EmployerCTA() {
                   <option value="retail" className="bg-brand-navy">Retail & Customer Service</option>
                   <option value="industrial" className="bg-brand-navy">Industrial & Operational</option>
                   <option value="household" className="bg-brand-navy">Household Staffing</option>
+                  <option value="vip" className="bg-brand-navy">⭐ VIP & Premium Household</option>
                   <option value="other" className="bg-brand-navy">Other</option>
                 </select>
                 <textarea

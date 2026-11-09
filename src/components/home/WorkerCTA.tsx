@@ -2,10 +2,10 @@ import Link from "next/link";
 import { ArrowRight, Users, CheckCircle2 } from "lucide-react";
 
 const benefits = [
-  "Access to diverse employment opportunities across Armenia",
-  "Support throughout your application and placement process",
-  "Fair treatment and professional representation",
-  "Opportunities in hospitality, healthcare, retail, and more",
+  "Access to exclusive opportunities — including VIP and premium household roles",
+  "Be considered for elite placements with high-profile clients who demand excellence",
+  "Full support throughout your application, interview, and placement process",
+  "Professional representation and fair, transparent working conditions",
 ];
 
 export default function WorkerCTA() {
@@ -23,11 +23,12 @@ export default function WorkerCTA() {
             </div>
             <div className="gold-divider mb-6" />
             <h2 className="section-title mb-4">
-              Your Next Opportunity Starts Here
+              Your Next Opportunity — Possibly an Extraordinary One
             </h2>
             <p className="section-subtitle mb-6">
-              We help workers across Armenia find meaningful, stable employment with reputable
-              businesses and organizations that value their contribution.
+              We place professionals across all industries — from reputable businesses and hotels
+              to the private residences of VIPs, executives, and high-profile families who expect
+              the very best. If you have the skills and the right attitude, we want to hear from you.
             </p>
             <ul className="space-y-3 mb-10">
               {benefits.map((b) => (
@@ -55,7 +56,7 @@ export default function WorkerCTA() {
               { title: "Retail & Sales", roles: "Cashiers, Sales Associates" },
               { title: "Office & Admin", roles: "Receptionists, Coordinators" },
               { title: "Industrial & Warehouse", roles: "Factory, Logistics Workers" },
-              { title: "Household Services", roles: "Housekeepers, Nannies" },
+              { title: "⭐ VIP & Premium Household", roles: "Private Chef, Butler, Housekeeper for VIP" },
             ].map(({ title, roles }) => (
               <div
                 key={title}
