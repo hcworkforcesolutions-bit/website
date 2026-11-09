@@ -28,6 +28,33 @@ const testimonials = [
       "Our team has discussed the level of support we receive at length — HC Workforce Solutions genuinely goes beyond what you expect from a staffing partner. Truly appreciating the way they support us.",
     rating: 5,
   },
+  {
+    initial: "A.V.",
+    role: "Private Estate Manager",
+    sector: "VIP Household",
+    location: "Confidential",
+    quote:
+      "Finding a private chef who meets the exacting standards of a high-profile household is not easy. HC Workforce Solutions understood our requirements completely — the placement was seamless and the discretion was absolute.",
+    rating: 5,
+  },
+  {
+    initial: "C.M.",
+    role: "Personal Representative",
+    sector: "Executive Household",
+    location: "Confidential",
+    quote:
+      "We engaged HC Workforce Solutions to staff a VIP residence with a housekeeper and a personal assistant. Both placements exceeded expectations. Their vetting process gave us full confidence before anyone set foot on the property.",
+    rating: 5,
+  },
+  {
+    initial: "R.D.",
+    role: "Chief of Staff",
+    sector: "High-Profile Family Office",
+    location: "International Client",
+    quote:
+      "Discretion is non-negotiable when staffing for a prominent family. HC Workforce Solutions handled every detail with professionalism and confidentiality. We continue to rely on them exclusively for all household staffing needs.",
+    rating: 5,
+  },
 ];
 
 export default function Testimonials() {
@@ -43,7 +70,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {testimonials.map(({ initial, role, sector, location, quote, rating }) => (
             <div key={initial + role} className="card border border-gray-100 flex flex-col">
               <Quote size={28} className="text-brand-gold/30 mb-4" />
