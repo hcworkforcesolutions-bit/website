@@ -55,6 +55,15 @@ const testimonials = [
       "I contacted HC Workforce Solutions directly and was impressed by how seriously they took confidentiality. The housekeeper placed at my property is exceptional — thorough, trustworthy, and exactly what I asked for.",
     rating: 5,
   },
+  {
+    initial: "V.E.",
+    role: "Private Household Client",
+    sector: "Household Staffing",
+    location: "International Client",
+    quote:
+      "I truly appreciate the professionalism, patience, and support throughout this process. It has been a pleasure working with this agency — we are very much looking forward to a wonderful and long-term working relationship.",
+    rating: 5,
+  },
 ];
 
 export default function Testimonials() {
