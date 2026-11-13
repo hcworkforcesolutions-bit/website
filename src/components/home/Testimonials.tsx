@@ -64,6 +64,15 @@ const testimonials = [
       "I truly appreciate the professionalism, patience, and support throughout this process. It has been a pleasure working with this agency — we are very much looking forward to a wonderful and long-term working relationship.",
     rating: 5,
   },
+  {
+    initial: "L.A.",
+    role: "HR Director",
+    sector: "International Hotel",
+    location: "International Client",
+    quote:
+      "The staff placed at our hotel has been outstanding — truly among the best we have worked with. HC Workforce Solutions understood exactly what our property required and delivered with professionalism. We are very happy with the placement.",
+    rating: 5,
+  },
 ];
 
 export default function Testimonials() {
