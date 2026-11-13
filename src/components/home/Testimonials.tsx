@@ -68,7 +68,7 @@ const testimonials = [
     initial: "L.A.",
     role: "HR Director",
     sector: "International Hotel",
-    location: "International Client",
+    location: "Yerevan, Armenia",
     quote:
       "The staff placed at our hotel has been outstanding — truly among the best we have worked with. HC Workforce Solutions understood exactly what our property required and delivered with professionalism. We are very happy with the placement.",
     rating: 5,
